@@ -43,13 +43,27 @@ section{padding:88px 0;scroll-margin-top:90px}.hero{min-height:610px;padding-top
 /* Education header follows the reference: left-aligned section label and split headline. */
 .edu-section{padding:54px 0 68px;text-align:left;background:transparent;border:0}
 .edu-kicker{margin:0 0 14px;color:var(--cyan);font:500 .63rem var(--mono);letter-spacing:.14em;text-transform:uppercase}
-.edu-section .education-heading{margin:0 0 30px;text-align:left;color:#F1F5F6;font:800 clamp(2.4rem,5.7vw,4.2rem)/1.04 var(--font);letter-spacing:-.075em}
+.edu-section .education-heading{
+  margin:0 0 30px;
+  text-align:left;
+  color:#F1F5F6;
+  font-weight:800;
+  font-size:clamp(2.2rem,5vw,3.8rem);
+  line-height:1.04;
+  letter-spacing:-.075em;
+}
+
 .edu-section .edu-period{color:#D2F477;-webkit-text-fill-color:#D2F477}
 .edu-section .edu-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
 .edu-section .edu-card{min-height:0;padding:16px 0 0;border:0;border-top:1px solid rgba(100,228,233,.34);background:transparent;text-align:left}
 .edu-section .edu-card h3{margin:0 0 7px;color:#F1F5F6;font-size:.84rem;line-height:1.45}
 .edu-section .edu-card p{margin:0;color:#D2F477;font-size:.68rem}
-@media(max-width:680px){.edu-section{padding:44px 0}.edu-section .edu-grid{grid-template-columns:1fr;gap:18px}.edu-section .education-heading{font-size:clamp(2.25rem,9vw,3.1rem)}}
+@media(max-width:680px){
+  .edu-section{padding:44px 0}
+  .edu-section .edu-grid{grid-template-columns:1fr;gap:18px}
+  .edu-section .education-heading{font-size:clamp(2.2rem,5vw,3.8rem)}
+}
+
 </style>
 </head>
 <body>
