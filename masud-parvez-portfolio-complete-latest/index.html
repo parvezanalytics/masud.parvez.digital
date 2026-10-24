@@ -64,6 +64,36 @@ section{padding:88px 0;scroll-margin-top:90px}.hero{min-height:610px;padding-top
   .edu-section .education-heading{font-size:clamp(2.2rem,5vw,3.8rem)}
 }
 
+/* Section 06: match heading size with section 05 */
+.edu-section .education-heading {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+}
+
+/* Prevent education-card content from being clipped */
+.edu-section .edu-card {
+  min-width: 0;
+  overflow: visible;
+}
+
+/* Let long text wrap instead of getting cut off */
+.edu-section .edu-card h3,
+.edu-section .edu-card p {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.edu-section .edu-card h3 {
+  line-height: 1.5;
+}
+
+/* Keep section 06 heading size consistent on mobile */
+@media (max-width: 680px) {
+  .edu-section .education-heading {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+  }
+}
+
 </style>
 </head>
 <body>
